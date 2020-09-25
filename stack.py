@@ -1,3 +1,11 @@
+'''Stack has the following methods 
+1. push - to push element at the last index
+2. pop - pop out last index element 
+3.peek - return last index element 
+5.size - return size of stack items
+6.is_empty - check wheather stack items  is empty or not and return 1 or 0
+'''
+
 class Stack:
     def __init__(self,items):
         self.items = items
@@ -20,6 +28,12 @@ class Stack:
             return len(self.items)
         else:
             return None
+            
+    def is_empty(self):
+        '''It will check wheather list is empty or not  '''
+        if self.items is None:
+            return True
+        return False
 
 s = Stack([1,2,3,4])
 s.push()
@@ -27,6 +41,7 @@ print(s.items)
 print(s.pop())
 print(s.peek())
 print(s.size())
+print(s.is_empty())
 
 
 
