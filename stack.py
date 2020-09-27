@@ -31,7 +31,7 @@ class Stack:
             
     def is_empty(self):
         '''It will check wheather list is empty or not  '''
-        if self.items is None:
+        if self.items == [] :
             return True
         return False
 
